@@ -1,7 +1,8 @@
 <h1> 게시글 생성 - 글쓰기</h1>
  <!--form : 사용자에게 양식을 제공하고 값을 받아서(input name, value)
    서버에 전송(action)하는 역할-->
- <form action="{% url 'articles:create' %}">
+ <form action="{% url 'articles:create' %}" method="POST">
+  {% csrf_token %}
   <label for="title">제목 : </label>
   <input type="text", name="title" id="title">
   <label for="conent">내용 : </label>

@@ -19,7 +19,7 @@ def new(request):
 
 def create(request):
     # DB저장 로직
-    title = request.GET.get('title')
-    content = request.GET.get('content')
+    title = request.POST.get('title')
+    content = request.POST.get('content')
     Article.objects.create(title=title, content=content)
     return redirect('articles:index')
