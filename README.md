@@ -46,7 +46,7 @@ $ python manage.py startapp 앱이름
 
   ### 2. CRUD 기능 구현
    생성 create- 게시글 생성
-   > 사용자에게 html form 제공, 입력한 데이터를 처리
+   > 사용자에게 html form 제공, 입력한 데이터를 처리 (ModelFrom 로직으로 변경)
   #### 1. HTML Form 제공
   > http://localhost:8000/articles/new/ > new함수
 
@@ -56,4 +56,9 @@ $ python manage.py startapp 앱이름
   
   게시글 목록 
   > DB에서 게시글 가져와서, template에 전달
+
+  상세보기
+  > 특정한 글을 본다.
+  > http://localhost:8000/articles/<int:pk>/
+  
   

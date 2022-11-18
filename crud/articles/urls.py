@@ -10,5 +10,8 @@ urlpatterns = [
     # path('new/', views.new, name='new'),
     # http://localhost:8000/articles/create
     path('create/', views.create, name='create'),
+    # http://localhost:8000/articles/1/ : 1번글
+    # http://localhost:8000/articles/3/ : 3번글
+    path('<int:pk/', views.detail, name='detail'),
 
 ]
