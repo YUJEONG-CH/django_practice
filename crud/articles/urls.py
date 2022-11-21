@@ -12,6 +12,9 @@ urlpatterns = [
     path('create/', views.create, name='create'),
     # http://localhost:8000/articles/1/ : 1번글
     # http://localhost:8000/articles/3/ : 3번글
-    path('<int:pk/', views.detail, name='detail'),
+    path('<int:pk>/', views.detail, name='detail'),
+    # http://localhost:8000/articles/1/update/ : 1번글 수정
+    # http://localhost:8000/articles/3/update/ : 3번글 수정
+    path('<int:pk>/update/', views.update, name='update'),
 
 ]

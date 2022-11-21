@@ -61,4 +61,12 @@ $ python manage.py startapp 앱이름
   > 특정한 글을 본다.
   > http://localhost:8000/articles/<int:pk>/
   
-  
+  삭제하기
+  > 특정한 글을 삭제한다.
+  > http://localhost:8000/articles/<int:pk>/delete
+
+  수정하기
+  > 특정한 글을 수정한다.
+  >> 사용자에게 수정할 수 있는 양식을 제공하고 (GET) // 특정한 글을 수정한다. (POST)
+  > http://localhost:8000/articles/<int:pk>/update
+
